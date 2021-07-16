@@ -182,7 +182,7 @@ body,
   border: 2px dashed var(--border-color);
   border-radius: 6px;
   background: #f5fcff;
-  color: #607d8b;
+  color: rgba(133,78,206,1);
 }
 
 .sharing-container img {
@@ -242,7 +242,7 @@ body,
   background: var(--main-bg-color);
   border: none;
   border-radius: 5px;
-  color: #607d8b;
+  color: #B860EA;
   cursor: pointer;
 }
 
