@@ -19,7 +19,7 @@ const baseURL = "https://we-share-file-transfer.herokuapp.com";
 const uploadURL = `${baseURL}/files/api`;
 const emailURL = `${baseURL}/api/files/send`;
 
-const maxAllowedSize = 100 * 1024 * 1024; //100mb
+const maxAllowedSize = 1024 * 1024 * 1024; //1000mb
 
 
 browseBtn.addEventListener("click", () => {
@@ -35,7 +35,7 @@ dropZone.addEventListener("drop", (e) => {
       fileInput.files = files;
       uploadFile();
     } else {
-      showToast("Max file size is 100MB");
+      showToast("Max file size is 1 GB");
     }
   } else if (files.length > 1) {
     showToast("You can't upload multiple files");
