@@ -239,10 +239,10 @@ body,
   font-size: 18px;
   padding: 8px 40px;
   margin-top: 15px;
-  background: var(--main-bg-color);
+  background: #B860EA;
   border: none;
   border-radius: 5px;
-  color: #B860EA;
+  color: #607d8b;
   cursor: pointer;
 }
 
