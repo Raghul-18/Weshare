@@ -243,7 +243,7 @@ body,
   background: var(--main-bg-color);
   border: none;
   border-radius: 5px;
-  color: rgba(133,78,206,1);
+  color: #f5fcff;
   cursor: pointer;
 }
 
