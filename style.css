@@ -182,7 +182,7 @@ body,
   font-size: 20px;
   border: 2px dashed var(--border-color);
   border-radius: 6px;
-  background: #f5fcff;
+  background: black;
   color: rgba(133,78,206,1);
 }
 
