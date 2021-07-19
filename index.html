@@ -42,13 +42,34 @@
                 <input type="text" id="fileURL" readonly>
                 <img src="images/copy-icon.svg" id="copyURLBtn" alt="copy to clipboard icon">
             </div>
-
-
-            
+            <div class="send-btn-container">
+                <button id="shareBtn">Share</button>
+            </div>
         </div>
     </section>
     <div class="image-vector"></div>  
     <div class="toast">Sample message</div>
+     <script>
+        const shareBtnRef = document.querySelector('#shareBtn');
+        shareBtnRef.onclick = async () => {
+          //check if native sharing is available
+          if(navigator.share) {
+            try {
+              const shareData = {
+                title: 'We Share',
+                text: 'Click the link below to download',
+                url:copyURLBtn,
+              }
+              await navigator.share(shareData);
+              console.log('Share successfull');
+            } catch(err) {
+              console.log('Error: ', err);
+            }
+          } else {
+            console.warn('Native Web Sharing not supported');
+          }
+        }
+      </script>
     <script src="index.js"></script>
 </body>
 
