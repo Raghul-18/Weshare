@@ -15,7 +15,7 @@ const fileURL = document.querySelector("#fileURL");
 
 const toast = document.querySelector(".toast");
 
-const baseURL = "https://we-share-file-transfer.herokuapp.com";
+const baseURL = "https://wee-share.herokuapp.com/";
 const uploadURL = `${baseURL}/files/api`;
 const emailURL = `${baseURL}/api/files/send`;
 
